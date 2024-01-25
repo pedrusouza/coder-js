@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+<meta charset = "UTF-8">
+<script>
+    var nome = prompt("Como gostaria de ser chamado?");
+    var numero = prompt(nome+", Digite um número. Ao final, tente descobrir qual operação lógica foi realizada")
+
+    function fatorial(num) {
+        var result = num;
+        if (num === 0 || num === 1) {
+            return 1; 
+        }
+        while (num > 1) { 
+            num--;
+            result *= num;
+        }
+            return result;
+    }
+
+    if(Number.isInteger(numero) == true){
+        alert("Somente números");
+    }
+    else{
+        var fatorialNumero = fatorial(numero);
+        alert(fatorialNumero);
+    }
+</script>
+</head>
